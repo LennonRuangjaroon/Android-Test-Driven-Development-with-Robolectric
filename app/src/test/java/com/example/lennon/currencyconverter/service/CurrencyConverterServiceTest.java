@@ -1,5 +1,7 @@
 package com.example.lennon.currencyconverter.service;
 
+
+import com.example.lennon.currencyconverter.service.impl.ExchangeRateServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,12 +14,12 @@ import static org.junit.Assert.assertEquals;
  */
 public class CurrencyConverterServiceTest {
 
-    private CurrencyConverterServiceExchange currencyConverterService;
+    private CurrencyConverterService currencyConverterService;
 
     @Before
     public void setUp() {
-        currencyConverterService = new CurrencyConverterServiceExchange(new
-                ExchangeRateService());
+        currencyConverterService = new CurrencyConverterService(new
+                ExchangeRateServiceImpl());
     }
 
     @Test

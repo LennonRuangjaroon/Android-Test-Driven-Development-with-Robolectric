@@ -15,13 +15,6 @@ public class MainActivity extends AppCompatActivity {
 
         initControls();
 
-//        CurrencyConverterServiceExchange currencyConverterService = new
-//                CurrencyConverterServiceExchange(new ExchangeRateService());
-//        int converterCurrency = currencyConverterService.converterCurrency(10, "USD");
-//        TextView viewById = (TextView) findViewById(R.id.amountText);
-//        viewById.setText("test " + converterCurrency);
-//        TextView viewById = (TextView) findViewById(R.id.helloworld);
-
     }
 
     protected void initControls(){

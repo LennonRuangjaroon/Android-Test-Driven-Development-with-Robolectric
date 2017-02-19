@@ -6,11 +6,11 @@ package com.example.lennon.currencyconverter.service;
  * Created by lennon on 2/18/2017 AD.
  */
 @SuppressWarnings("Since15")
-public class CurrencyConverterServiceExchange extends ExchangeRateService {
+public class CurrencyConverterService {
 
     private ExchangeRateService exchangeRateService;
 
-    public CurrencyConverterServiceExchange(ExchangeRateService exchangeRateService) {
+    public CurrencyConverterService(ExchangeRateService exchangeRateService) {
         this.exchangeRateService = exchangeRateService;
     }
 
