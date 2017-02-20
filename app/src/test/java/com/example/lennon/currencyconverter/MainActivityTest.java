@@ -50,7 +50,6 @@ public class MainActivityTest {
 
         assertNotNull(amount);
         assertEquals(View.VISIBLE, amount.getVisibility());
-//        assertEquals("amount", amount.getText().toString());
     }
 
     @Test
@@ -60,7 +59,6 @@ public class MainActivityTest {
 
         assertNotNull(result);
         assertEquals(View.VISIBLE, result.getVerticalFadingEdgeLength());
-//        assertEquals("TextView", result.getText().toString());
     }
 
     @Test
@@ -75,54 +73,57 @@ public class MainActivityTest {
 
     @Test
     public void convert_10usd_to_thb_should_converted() {
-        EditText amount = (EditText) mainActivity.findViewById(R.id
-                .amountText);
-        Button convertBtn = (Button) mainActivity.findViewById(R.id.convertButton);
+        perfromInputData("10", "USD");
+        perfromClickConvert();
 
-        EditText curencyType = (EditText) mainActivity.findViewById(R.id
-                .currencyTxt);
-        curencyType.setText("USD");
-        amount.setText("10");
-        convertBtn.performClick();
-
-        Button button = (Button) mainActivity.findViewById( R.id.convertButton );
-        button.performClick();
-
-        TextView result = (TextView) mainActivity.findViewById(R.id.resultTextView);
-        assertEquals("300", result.getText().toString());
+        assertConvertCurrency("300");
     }
 
     @Test
     public void convert_20usd_to_thb_should_converted() {
-        EditText amount = (EditText) mainActivity.findViewById(R.id
-                .amountText);
-        Button convertBtn = (Button) mainActivity.findViewById(R.id.convertButton);
+        perfromInputData("20", "USD");
+        perfromClickConvert();
 
-        EditText curencyType = (EditText) mainActivity.findViewById(R.id
-                .currencyTxt);
-        curencyType.setText("USD");
-        amount.setText("20");
-        convertBtn.performClick();
-
-        TextView result = (TextView) mainActivity.findViewById(R.id.resultTextView);
-        assertEquals("600", result.getText().toString());
+        assertConvertCurrency("600");
     }
 
     @Test
     public void convert_10eur_to_thb_should_converted() {
-        EditText amount = (EditText) mainActivity.findViewById(R.id
-                .amountText);
-        Button convertBtn = (Button) mainActivity.findViewById(R.id.convertButton);
+        perfromInputData("10", "EUR");
+        perfromClickConvert();
 
-        EditText curencyType = (EditText) mainActivity.findViewById(R.id
-                .currencyTxt);
-        curencyType.setText("EUR");
-        amount.setText("10");
-        convertBtn.performClick();
-
-        TextView result = (TextView) mainActivity.findViewById(R.id.resultTextView);
-        assertEquals("400", result.getText().toString());
+        assertConvertCurrency("400");
     }
+
+    @Test
+    public void convert_20eur_to_thb_should_converted() {
+        perfromInputData("20", "EUR");
+        perfromClickConvert();
+
+        assertConvertCurrency("800");
+    }
+
+    private void perfromInputData(String amount, String currencyType) {
+        EditText amountTxt = (EditText) mainActivity.findViewById(R.id
+                .amountText);
+
+        EditText curencyTypeTxt = (EditText) mainActivity.findViewById(R.id
+                .currencyTxt);
+
+        curencyTypeTxt.setText(currencyType);
+        amountTxt.setText(amount);
+    }
+
+    private void perfromClickConvert() {
+        Button convertBtn = (Button) mainActivity.findViewById(R.id.convertButton);
+        convertBtn.performClick();
+    }
+
+    private void assertConvertCurrency(String result) {
+        TextView resultTxt = (TextView) mainActivity.findViewById(R.id.resultTextView);
+        assertEquals(result, resultTxt.getText().toString());
+    }
+
 
 
 }//end class

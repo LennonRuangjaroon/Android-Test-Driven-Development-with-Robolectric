@@ -24,7 +24,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         init();
+        onclickConvert();
+    }
 
+    private void onclickConvert() {
         convertBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 currencyConverter = new CurrencyConverter(new ExchangeRateServiceImpl());
