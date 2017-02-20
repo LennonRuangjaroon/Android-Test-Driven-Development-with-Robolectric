@@ -1,7 +1,7 @@
-package com.example.lennon.currencyconverter.service;
+package com.example.lennon.currencyconverter.converter;
 
 
-import com.example.lennon.currencyconverter.service.impl.ExchangeRateServiceImpl;
+import com.example.lennon.currencyconverter.exchangerate.ExchangeRateServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,13 +12,13 @@ import static org.junit.Assert.assertEquals;
  * author lennon
  * Created by lennon on 2/18/2017 AD.
  */
-public class CurrencyConverterServiceTest {
+public class CurrencyConverterTest {
 
-    private CurrencyConverterService currencyConverterService;
+    private CurrencyConverter currencyConverter;
 
     @Before
     public void setUp() {
-        currencyConverterService = new CurrencyConverterService(new
+        currencyConverter = new CurrencyConverter(new
                 ExchangeRateServiceImpl());
     }
 
@@ -49,21 +49,21 @@ public class CurrencyConverterServiceTest {
 
     @Test(expected = ArithmeticException.class)
     public void convert_amount_large_range_should_throw_exception() {
-        currencyConverterService.converterCurrency(1000000000, "USD");
+        currencyConverter.converterCurrency(1000000000, "USD");
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void convert_negative_amount_should_throw_exception() {
-        currencyConverterService.converterCurrency(-10, "USD");
+        currencyConverter.converterCurrency(-10, "USD");
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void convert_not_found_currency_should_throw_exception() {
-        currencyConverterService.converterCurrency(10, "");
+        currencyConverter.converterCurrency(10, "");
     }
 
     private void assertCurrencyConverter(int amount, String currency, int expected) {
-        int result = currencyConverterService.converterCurrency(amount, currency);
+        int result = currencyConverter.converterCurrency(amount, currency);
         assertEquals(expected, result);
     }
 

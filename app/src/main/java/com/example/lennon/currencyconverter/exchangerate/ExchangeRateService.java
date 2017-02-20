@@ -1,8 +1,5 @@
-package com.example.lennon.currencyconverter.service;
+package com.example.lennon.currencyconverter.exchangerate;
 
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * The Rate for simulate rate of currency.

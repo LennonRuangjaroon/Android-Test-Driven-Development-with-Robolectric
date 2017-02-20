@@ -1,6 +1,4 @@
-package com.example.lennon.currencyconverter.service.impl;
-
-import com.example.lennon.currencyconverter.service.ExchangeRateService;
+package com.example.lennon.currencyconverter.exchangerate;
 
 import java.util.HashMap;
 import java.util.Map;

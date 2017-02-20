@@ -11,28 +11,61 @@
         android:paddingBottom="@dimen/activity_vertical_margin"
         tools:context="com.example.lennon.currencyconverter.MainActivity">
 
-    <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="amount"
-            android:ems="10"
-            android:layout_marginTop="39dp" android:id="@+id/amountText"
-            android:layout_marginStart="56dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"/>
     <TextView
-            android:text="TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="75dp"
-            android:id="@+id/resultTextView" android:layout_below="@+id/amountText"
+            android:layout_marginTop="28dp"
+            android:id="@+id/resultTextView"
+            android:layout_below="@+id/amountText"
             android:layout_alignStart="@+id/amountText"/>
+    <TextView
+            android:text="Amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/amountText"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="19dp" android:layout_marginTop="11dp"
+            android:id="@+id/textView"/>
+    <TextView
+            android:text="Result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/convertButton"
+            android:layout_alignStart="@+id/textView"
+            android:id="@+id/textView2"/>
     <Button
             android:text="Convert"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="124dp"
+            android:id="@+id/convertButton"
             android:layout_below="@+id/resultTextView"
-            android:layout_alignStart="@+id/resultTextView"
-            android:layout_marginTop="67dp" android:id="@+id/convertButton"/>
+            android:layout_alignStart="@+id/textView2"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_marginTop="89dp"
+            android:id="@+id/amountText"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/convertButton"/>
+    <TextView
+            android:text="Currency Type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginBottom="28dp" android:id="@+id/textView3"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/currencyTxt"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toEndOf="@+id/textView3"/>
+
 </RelativeLayout>
