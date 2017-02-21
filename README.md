@@ -1,8 +1,8 @@
 # TDD-CurrencyConverter-With-Android-Robolectric
 
-![Alt text](TDD-CurrencyConverter-With-Android-Robolectric/Screenshot_1487658007.png "Action")
+![Alt text](https://github.com/LennonRuangjaroon/TDD-CurrencyConverter-With-Android-Robolectric/blob/master/Screenshot_1487658007.png "Action")
 
-![Alt text](TDD-CurrencyConverter-With-Android-Robolectric/Screenshot_1487658197.png "Action")
+![Alt text](https://github.com/LennonRuangjaroon/TDD-CurrencyConverter-With-Android-Robolectric/blob/master/Screenshot_1487658197.png "Action")
 
 # Material
 - https://docs.google.com/presentation/d/1hOBcbmmLvFCBbJbDRrjeoKK8jnbYGQOaKip6-2Tk1FY/edit?usp=sharing
