@@ -103,6 +103,14 @@ public class MainActivityTest {
         assertConvertCurrency("800");
     }
 
+    @Test
+    public void convert_worng_currency_type_should_show_msg_error() {
+        perfromInputData("20", "xxx");
+        perfromClickConvert();
+
+        assertConvertCurrency("Can not convert!!!");
+    }
+
     private void perfromInputData(String amount, String currencyType) {
         EditText amountTxt = (EditText) mainActivity.findViewById(R.id
                 .amountText);
@@ -123,7 +131,6 @@ public class MainActivityTest {
         TextView resultTxt = (TextView) mainActivity.findViewById(R.id.resultTextView);
         assertEquals(result, resultTxt.getText().toString());
     }
-
 
 
 }//end class

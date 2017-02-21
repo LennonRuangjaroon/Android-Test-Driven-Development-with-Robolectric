@@ -33,11 +33,18 @@ public class MainActivity extends AppCompatActivity {
                 currencyConverter = new CurrencyConverter(new ExchangeRateServiceImpl());
                 Integer amount = Integer.valueOf(amountEdt.getText().toString());
                 String currency = currencyTxt.getText().toString();
-                int result = currencyConverter.converterCurrency(amount, currency);
-
-                resultTxv.setText(String.valueOf(result));
+                getConvertCurrency(amount, currency);
             }
         });
+    }
+
+    private void getConvertCurrency(Integer amount, String currency) {
+        try {
+            int result = currencyConverter.converterCurrency(amount, currency);
+            resultTxv.setText(String.valueOf(result));
+        }catch (Exception e){
+            resultTxv.setText("Can not convert!!!");
+        }
     }
 
     protected void init() {
