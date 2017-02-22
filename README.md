@@ -5,12 +5,19 @@
 # Material
 - https://docs.google.com/presentation/d/1hOBcbmmLvFCBbJbDRrjeoKK8jnbYGQOaKip6-2Tk1FY/edit?usp=sharing
 
-# Robolectric
+# Robolectric (Android)
 - http://robolectric.org
 
 # Testing With Android
 - https://developer.android.com/training/testing/index.html
 
-#TDD Katas
+# Testing with Xcode
+- https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/testing_with_xcode/chapters/01-introduction.html#//apple_ref/doc/uid/TP40014132-CH1-SW1
+
+# Mock object framework
+- http://site.mockito.org
+- http://ocmock.org
+
+# TDD Katas
 - https://github.com/garora/TDD-Katas
 - http://codekata.com
