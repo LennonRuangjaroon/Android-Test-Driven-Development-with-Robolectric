@@ -3,7 +3,7 @@
 ![Alt text](https://github.com/LennonRuangjaroon/TDD-CurrencyConverter-With-Android-Robolectric/blob/master/Screenshot_1.png "Action1")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Alt text](https://github.com/LennonRuangjaroon/TDD-CurrencyConverter-With-Android-Robolectric/blob/master/Screenshot_2.png "Action2")
 
 # Material
-- https://docs.google.com/presentation/d/1hOBcbmmLvFCBbJbDRrjeoKK8jnbYGQOaKip6-2Tk1FY/edit?usp=sharing
+- https://docs.google.com/presentation/d/1cPvT0J7HFnjFbDtPBFd4q_EimIfrIAQdA-7iunAYO54/edit?usp=sharing
 
 # Robolectric (Android)
 - http://robolectric.org
