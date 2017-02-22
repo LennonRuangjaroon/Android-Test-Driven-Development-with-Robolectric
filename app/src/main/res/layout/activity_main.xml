@@ -19,7 +19,7 @@
             android:layout_below="@+id/amountText"
             android:layout_alignStart="@+id/amountText"/>
     <TextView
-            android:text="Amount"
+            android:text=""
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/amountText"
@@ -27,14 +27,14 @@
             android:layout_marginStart="19dp" android:layout_marginTop="11dp"
             android:id="@+id/amountTxtView"/>
     <TextView
-            android:text="Result"
+            android:text=""
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@+id/convertButton"
             android:layout_alignStart="@+id/amountTxtView"
             android:id="@+id/resultView"/>
     <Button
-            android:text="Convert"
+            android:text=""
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="124dp"
@@ -51,7 +51,7 @@
             android:layout_alignParentTop="true"
             android:layout_toEndOf="@+id/convertButton"/>
     <TextView
-            android:text="Currency Type"
+            android:text=""
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@+id/amountTxtView"
