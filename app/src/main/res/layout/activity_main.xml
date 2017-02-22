@@ -25,14 +25,14 @@
             android:layout_alignTop="@+id/amountText"
             android:layout_alignParentStart="true"
             android:layout_marginStart="19dp" android:layout_marginTop="11dp"
-            android:id="@+id/textView"/>
+            android:id="@+id/amountTxtView"/>
     <TextView
             android:text="Result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@+id/convertButton"
-            android:layout_alignStart="@+id/textView"
-            android:id="@+id/textView2"/>
+            android:layout_alignStart="@+id/amountTxtView"
+            android:id="@+id/resultView"/>
     <Button
             android:text="Convert"
             android:layout_width="wrap_content"
@@ -40,7 +40,7 @@
             android:layout_marginTop="124dp"
             android:id="@+id/convertButton"
             android:layout_below="@+id/resultTextView"
-            android:layout_alignStart="@+id/textView2"/>
+            android:layout_alignStart="@+id/resultView"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -54,17 +54,17 @@
             android:text="Currency Type"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/textView"
-            android:layout_alignStart="@+id/textView"
-            android:layout_marginBottom="28dp" android:id="@+id/textView3"/>
+            android:layout_above="@+id/amountTxtView"
+            android:layout_alignStart="@+id/amountTxtView"
+            android:layout_marginBottom="28dp" android:id="@+id/currencyTxtView"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/currencyTxt"
-            android:layout_alignBaseline="@+id/textView3"
-            android:layout_alignBottom="@+id/textView3"
-            android:layout_toEndOf="@+id/textView3"/>
+            android:layout_alignBaseline="@+id/currencyTxtView"
+            android:layout_alignBottom="@+id/currencyTxtView"
+            android:layout_toEndOf="@+id/currencyTxtView"/>
 
 </RelativeLayout>
